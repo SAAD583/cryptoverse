@@ -40,6 +40,7 @@ function App() {
                   <div className="routes">
                     <Routes>
                       <Route path="/" element={<HomePage/>}/>
+                      <Route path="*" element={<HomePage/>}/>
                       <Route path="/cryptoCurrencies" element={<CryptoCurrencies />} />
                       <Route path="/crypto/:coinId" element={<CryptoDetails />} />
                       <Route path="/news" element={<News />} />
