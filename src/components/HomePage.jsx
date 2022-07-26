@@ -15,7 +15,7 @@ const HomePage = () => {
   if (isFetching) return <Loader/>
 
   return (
-    <>
+    <div className='home-page-container'>
       <Title level={2} className='heading'>Global Crypto Stats: </Title>
       <Row gutter={10}>
         <Col span={12}> <Statistic title="Total CryptoCurrencies" value={globalStats.total}/></Col>
@@ -31,7 +31,7 @@ const HomePage = () => {
             </Col>
             <Col lg={12} md={12} sm={12} xs={24} style={{textAlign: "right", alignSelf: "center"}}>
                 <Title level={4} className="show-more">
-                  <Link to="/cryptocurrencies">Show More</Link>
+                  <Link to="/cryptocurrencies" className='show-more'>Show More</Link>
                 </Title>
             </Col>
                 <CryptoCurrencies simplified/>
@@ -42,14 +42,14 @@ const HomePage = () => {
             </Col>
             <Col lg={12} md={12} sm={12} xs={24} style={{textAlign: "right", alignSelf: "center"}}>
                 <Title level={4} className="show-more">
-                  <Link to="/news">Show More</Link>
+                  <Link to="/news" className='show-more'>Show More</Link>
                 </Title>
             </Col>
                 <News simplified/>
         </Row>
 
       </div>
-    </>
+    </div>
   )
 }
 

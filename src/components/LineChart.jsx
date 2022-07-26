@@ -52,7 +52,7 @@ const LineChart = ({coinName, currentPrice, coinHistory}) => {
                         {coinName} Price Chart:
                     </Title>
                 </Col>
-                <Col lg={12} style={{textAlign: "right", }}>
+                <Col lg={12} style={{textAlign: "right", alignSelf: "center"}}>
                         <Space>
                             <Row>
                                 <Col>

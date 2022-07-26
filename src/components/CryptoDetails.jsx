@@ -32,7 +32,7 @@ const CryptoDetails = () => {
   ];
 
   return (
-    <Col className='coin-detail-container'>
+    <Col className='coins-details-container'>
         <Col className='coin-heading-container'>
           <Title level={2} className="coin-name">
             {cryptoDetails?.name} ({cryptoDetails?.symbol}) price
@@ -111,14 +111,12 @@ const CryptoDetails = () => {
                 </Title>
                 {cryptoDetails?.links?.map(link => (
                   <Row key={link?.name} target="_blank">
-                    <Space>
                       <Title level={5}>
                         {link?.type}
                       </Title>
-                      <a href={link?.url}>
+                      <a href={link?.url} style={{marginLeft: "5px"}}>
                         {link?.name}
                       </a>
-                    </Space>
                   </Row>
                 ))}
             </Col>

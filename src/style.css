@@ -4,17 +4,24 @@
     box-sizing: border-box;
 }
 
-
-
 .app {
     display: flex;
     overflow: hidden;
+}
+
+.home-page-container h2, h3, h4{
+    color: #0071bd;
+    font-weight: bold;
 }
 
 .navbar {
     background-color: rgb(0, 21, 41);
 }
 
+.coin-value-statistics p {
+    min-height: 44px;
+    margin-bottom: 0 !important;
+}
 
 .nav-container {
     background-color: #001529;
@@ -100,6 +107,10 @@
   
 }
 
+.show-more {
+    color: black !important
+}
+
 @media screen and (max-width: 575px) {
     .show-more {
         text-align: left;
@@ -175,6 +186,10 @@
     margin: 10px 0;
 }
 
+.coin-stats:first-of-type {
+    margin-top: 0;
+}
+
 .coin-details-heading {
     margin-top: 20px;
 }
@@ -182,4 +197,9 @@
 .coin-desc h3 {
     font-size: 24px !important;
     margin-top: 20px;
+}
+
+.coins-details-container h2, h3 {
+    color: #0071bd !important;
+    font-weight: bold !important;
 }

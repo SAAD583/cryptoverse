@@ -42,7 +42,7 @@ const News = (props) => {
                   </Col>
                 </Row>
               <div className='description-container'>
-                <p style={{color: "#1890ff"}}>
+                <p style={{color: "#0071bd"}}>
                   {news.description.length > 250? `${news.description.substring(0,250)}...`: news.description}
                 </p>
               </div>
